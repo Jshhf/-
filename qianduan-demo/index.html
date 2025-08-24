@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传简历</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 上传简历区域 -->
+        <main class="upload-section">
+            <article class="upload-card">
+                <header class="upload-header">
+                    <h1 class="finish-title">Finish!</h1>
+                    <h2 class="upload-title">Upload Your Resume</h2>
+                    <p class="upload-description">
+                        Upload your resume, the platform will help you parse and optimize, you can also skip this step
+                    </p>
+                </header>
+
+                <div class="upload-content">
+                    <div class="illustration">
+                        <div class="cat-creature"></div>
+                        <div class="process-flow">
+                            <div class="flow-element"></div>
+                            <div class="flow-element"></div>
+                            <div class="flow-element"></div>
+                        </div>
+                        <div class="leaf-shapes">
+                            <div class="leaf"></div>
+                            <div class="leaf"></div>
+                            <div class="leaf"></div>
+                        </div>
+                    </div>
+
+                    <div class="upload-area-container">
+                        <h3 class="upload-area-title">Upload file</h3>
+                        <div class="upload-area" id="uploadArea">
+                            <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt" style="display: none;">
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <p class="upload-instruction">
+                                Drag your resume file to this area, or click on the area to select the appropriate file to upload
+                            </p>
+                            <div class="file-info" id="fileInfo" style="display: none;">
+                                <i class="fas fa-file-alt"></i>
+                                <span id="fileName"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="upload-footer">
+                    <div class="button-group">
+                        <button class="btn btn-secondary" id="lastStepBtn">
+                            <i class="fas fa-arrow-left"></i>
+                            Last step
+                        </button>
+                        <button class="btn btn-primary" id="finishBtn">
+                            Finish
+                            <i class="fas fa-check"></i>
+                        </button>
+                    </div>
+
+                    <div class="progress-indicator">
+                        <div class="progress-step completed">
+                            <div class="step-circle">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <span class="step-label">Step 1</span>
+                        </div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step current">
+                            <div class="step-circle"></div>
+                            <span class="step-label">Step 2</span>
+                        </div>
+                        <div class="progress-line"></div>
+                        <div class="progress-step">
+                            <div class="step-circle"></div>
+                            <span class="step-label">Step 3</span>
+                        </div>
+                    </div>
+                </footer>
+            </article>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
